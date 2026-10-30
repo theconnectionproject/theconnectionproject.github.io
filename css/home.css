@@ -21,8 +21,8 @@
 }
 .hero__svg { width: 100%; height: 100%; overflow: visible; }
 
-.hero__inner { position: relative; }
-.hero__eyebrow { color: var(--plum-soft); margin-bottom: 1.75rem; }
+.hero__inner { position: relative; z-index: 1; }
+.hero__eyebrow { color: var(--plum); margin-bottom: 1.75rem; }
 .hero__title {
   font-size: var(--fs-hero);
   line-height: 0.9;
@@ -146,6 +146,16 @@
     height: calc(var(--header-h) + clamp(200px, 50vw, 390px));
   }
   .hero__title { max-width: none; font-size: clamp(3.4rem, 1rem + 10vw, 7.5rem); }
+  /* the shapes fade out behind the text so the orchid headline keeps its contrast */
+  .hero::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0; right: 0; bottom: 0;
+    top: calc(var(--header-h) + clamp(170px, 42vw, 330px));
+    background: linear-gradient(to bottom, rgba(247, 240, 233, 0), rgba(247, 240, 233, 0.94) 140px);
+    pointer-events: none;
+  }
   .scroll-cue { display: none; }
 }
 @media (max-width: 600px) {
@@ -274,7 +284,7 @@
   font-size: 1.375rem;
   letter-spacing: 0.04em;
   line-height: 1;
-  color: var(--orchid);
+  color: var(--orchid-deep);
   padding-top: 0.7rem;
 }
 .idea__title {
@@ -354,6 +364,7 @@
 }
 .sources__list {
   display: grid;
+  overflow-wrap: anywhere;   /* long DOIs wrap on narrow screens */
   gap: 1rem;
   list-style: decimal;
   padding-left: 1.25rem;
@@ -361,7 +372,7 @@
   line-height: 1.55;
   color: var(--plum-soft);
 }
-.sources__list li::marker { color: var(--orchid); font-weight: 700; }
+.sources__list li::marker { color: var(--orchid-deep); font-weight: 700; }
 .sources__list cite { font-style: italic; }
 .sources__list a {
   color: var(--plum);
@@ -371,6 +382,23 @@
   text-underline-offset: 0.2em;
 }
 .sources__list a:hover { text-decoration-color: var(--coral); }
+.sources__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 32px;
+  margin-left: 0.15rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.sources__link::after {
+  /* small "opens elsewhere" arrow, drawn in CSS so it inherits the link colour */
+  content: "";
+  width: 0.55em; height: 0.55em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg) translate(-1px, 1px);
+}
 .sources__note { margin-top: 1rem; font-size: 0.75rem; color: var(--plum-soft); max-width: 52ch; }
 
 /* closing line that hands over to Notice / Understand / Choose */
@@ -495,7 +523,7 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1;
-  color: var(--orchid);
+  color: var(--orchid-deep);
 }
 .nuc__num::after {
   content: "";

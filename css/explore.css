@@ -45,7 +45,7 @@
   transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease), transform 0.3s var(--ease);
 }
 .ex-index a:hover::after, .ex-index a:focus-visible::after { background: var(--coral); border-color: var(--coral); transform: scale(1.25); }
-.ex-index__n { font-family: var(--font-display); font-size: 1.375rem; line-height: 1; color: var(--orchid); }
+.ex-index__n { font-family: var(--font-display); font-size: 1.375rem; line-height: 1; color: var(--orchid-deep); }
 .ex-index__t {
   font-size: 0.75rem;
   font-weight: 700;
@@ -169,7 +169,7 @@
   line-height: 1.45;
   background: var(--cream);   /* the pattern line passes beneath the text on small screens */
 }
-.pmap__n { font-family: var(--font-display); font-size: 1.125rem; line-height: 1.25; color: var(--orchid); flex: none; }
+.pmap__n { font-family: var(--font-display); font-size: 1.125rem; line-height: 1.25; color: var(--orchid-deep); flex: none; }
 
 .pmap__range, .venn__range {
   position: relative;
@@ -242,11 +242,13 @@
 .layer {
   transform-box: fill-box;
   transform-origin: center;
-  opacity: 0.5;
-  transition: opacity 0.5s var(--ease), transform 0.7s var(--ease);
+  transition: transform 0.7s var(--ease);
 }
-.layer.is-active { opacity: 1; }
-.layer.is-above { opacity: 0.22; transform: translateY(-10px); }
+.layer ellipse { opacity: 0.5; transition: opacity 0.5s var(--ease); }
+.layer.is-active ellipse { opacity: 1; }
+.layer.is-above { transform: translateY(-10px); }
+.layer.is-above ellipse { opacity: 0.22; }
+.layer.is-above .layer__label { opacity: 0.85; }
 .layer__label {
   font-family: var(--font-body);
   font-size: 13px;
@@ -279,7 +281,7 @@
   cursor: pointer;
   transition: background-color 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease);
 }
-.layers__tab-n { font-family: var(--font-display); font-size: 0.9375rem; font-weight: 400; letter-spacing: 0.02em; color: var(--orchid); }
+.layers__tab-n { font-family: var(--font-display); font-size: 0.9375rem; font-weight: 400; letter-spacing: 0.02em; color: var(--orchid-deep); }
 .layers__tab:hover { border-color: var(--orchid); }
 .layers__tab[aria-selected="true"] { border-color: var(--plum); background: var(--plum); color: var(--cream); }
 .layers__tab[aria-selected="true"] .layers__tab-n { color: var(--coral); }
@@ -314,9 +316,9 @@
 .venn { margin: 0; }
 .venn__svg { width: 100%; height: auto; overflow: visible; }
 .venn__circle { stroke: rgba(203, 181, 219, 0.55); stroke-width: 1.5; }
-.venn__overlap { fill: var(--coral); fill-opacity: 0.6; }
+.venn__overlap { fill: var(--coral); fill-opacity: 0.75; }
 .venn__title { font-family: var(--font-display); font-size: 28px; text-transform: uppercase; fill: var(--cream); }
-.venn__sub { font-family: var(--font-body); font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; fill: var(--lilac-on-plum); }
+.venn__sub { font-family: var(--font-body); font-size: 15px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; fill: var(--cream); }
 .venn__both { font-family: var(--font-display); font-size: 26px; text-transform: uppercase; fill: var(--plum); transition: opacity 0.3s var(--ease); }
 
 .venn__control { display: grid; gap: 0.35rem; max-width: 420px; margin: 0.75rem auto 0; }

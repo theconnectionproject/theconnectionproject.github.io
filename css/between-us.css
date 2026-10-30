@@ -172,6 +172,7 @@
 }
 .reader__head .tab-rule { margin-bottom: 1.25rem; }
 .reader__title { font-size: var(--fs-h2); }
+.reader__note { max-width: 50ch; margin-top: 1rem; color: var(--lilac-on-plum); font-size: var(--fs-small); }
 .reader__hl { color: var(--lilac); }
 .reader__tools { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 

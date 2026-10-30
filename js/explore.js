@@ -115,9 +115,13 @@
       const ax = 320 - d / 2, bx = 320 + d / 2;
       a.setAttribute("cx", ax); clip.setAttribute("cx", ax);
       b.setAttribute("cx", bx); overlap.setAttribute("cx", bx);
-      const push = 20 + v * 0.55;                   // labels move outward as the circles overlap
-      la.forEach((t) => t.setAttribute("x", ax - push));
-      lb.forEach((t) => t.setAttribute("x", bx + push));
+      const push = 20 + v * 0.55;                   // labels move outward as the circles overlap…
+      const gap = 16;                               // …and never enter the coral overlap
+      const halfA = la[0].getComputedTextLength() / 2, halfB = lb[0].getComputedTextLength() / 2;
+      const xa = Math.min(ax - push, bx - 150 - gap - halfA);
+      const xb = Math.max(bx + push, ax + 150 + gap + halfB);
+      la.forEach((t) => t.setAttribute("x", xa));
+      lb.forEach((t) => t.setAttribute("x", xb));
       both.style.opacity = Math.max(0, Math.min(1, (v - 45) / 25));
       const text = v < 15 ? "Two separate things." : v < 60 ? "Starting to meet." : "Both can exist at the same time.";
       if (caption.textContent !== text) caption.textContent = text;

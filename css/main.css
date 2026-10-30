@@ -14,6 +14,7 @@
 
   /* Derived tints (kept within the brand family) */
   --plum-soft: #5E4569;     /* secondary text on cream (AA) */
+  --orchid-deep: #7B5596;   /* orchid for SMALL text: 5.1:1 on cream, 4.7:1 on lilac wash (orchid itself is for large type only) */
   --lilac-wash: #EDE2EE;    /* tinted panels */
   --lilac-on-plum: #D9C7E6; /* body text on plum (AA) */
   --rule: rgba(65, 38, 78, 0.16);
@@ -529,4 +530,8 @@ h1, h2, h3, .display {
   .page-hero__grid { grid-template-columns: minmax(0, 1fr); }
   .page-hero__text, .page-hero__media { grid-column: 1 / -1; }
   .page-hero__cover { width: min(70%, 320px); }
+  .page-hero__deco {
+    -webkit-mask-image: linear-gradient(to bottom, #000 20%, transparent 55%);
+    mask-image: linear-gradient(to bottom, #000 20%, transparent 55%);
+  }
 }

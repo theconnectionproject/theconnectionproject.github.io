@@ -77,8 +77,9 @@
 
   /* ---------- Layout ---------- */
   const decideMode = () => {
+    // spreads only where two pages stay readable; phones (portrait or landscape) get single pages
     const w = stage.clientWidth;
-    return w >= 720 && window.innerWidth >= 760;
+    return w >= 720 && window.innerWidth >= 760 && window.innerHeight >= 520;
   };
 
   const layout = () => {
@@ -183,8 +184,11 @@
     // on a spread, show the shared activity name once
     const shared = title.length > 1 && title[0].split(" · ")[0] === title[1].split(" · ")[0] ? title[0] : title.join(" / ");
     chapterLabel.textContent = shared;
-    prevBtn.disabled = viewIndex === 0;
-    nextBtn.disabled = viewIndex === views.length - 1;
+    // a focused button that becomes disabled would drop keyboard focus to the page, so hand it to the pages
+    const atStart = viewIndex === 0, atEnd = viewIndex === views.length - 1;
+    if ((atStart && document.activeElement === prevBtn) || (atEnd && document.activeElement === nextBtn)) stage.focus({ preventScroll: true });
+    prevBtn.disabled = atStart;
+    nextBtn.disabled = atEnd;
     prevBtn.setAttribute("aria-label", spreadMode ? "Previous pages" : "Previous page");
     nextBtn.setAttribute("aria-label", spreadMode ? "Next pages" : "Next page");
     [...track.children].forEach((li, i) => {
@@ -211,7 +215,8 @@
   prevBtn.addEventListener("click", () => go(viewIndex - 1));
   nextBtn.addEventListener("click", () => go(viewIndex + 1));
 
-  stage.addEventListener("keydown", (e) => {
+  // keyboard page turning works anywhere in the reader (pages, buttons or track), not only on the pages
+  root.addEventListener("keydown", (e) => {
     const keys = { ArrowLeft: -1, ArrowRight: 1, PageUp: -1, PageDown: 1 };
     if (e.key in keys) { e.preventDefault(); go(viewIndex + keys[e.key]); }
     else if (e.key === "Home") { e.preventDefault(); go(0); }
@@ -277,7 +282,7 @@
     if (!expanded) return;
     if (e.key === "Escape") { e.preventDefault(); setExpanded(false); return; }
     if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-      if (document.activeElement === stage) return;   // the stage handles its own keys
+      if (root.contains(document.activeElement)) return;   // the reader handles its own keys
       e.preventDefault();
       go(viewIndex + (e.key === "ArrowLeft" ? -1 : 1));
     }
