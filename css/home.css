@@ -295,6 +295,7 @@
 .idea__cite {
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
   min-height: 32px;
   margin-top: 0.4rem;
   font-size: 0.75rem;
@@ -305,6 +306,15 @@
   text-decoration-color: var(--lilac);
   text-underline-offset: 0.3em;
   transition: color 0.3s var(--ease), text-decoration-color 0.3s var(--ease);
+}
+.idea__cite::after, .sources__link::after {
+  /* small "opens the article" arrow, drawn in CSS so it takes the link colour */
+  content: "";
+  flex: none;
+  width: 0.5em; height: 0.5em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg) translate(-1px, 1px);
 }
 .idea__cite:hover, .idea__cite:focus-visible { color: var(--plum); text-decoration-color: var(--orchid); }
 
@@ -364,42 +374,31 @@
 }
 .sources__list {
   display: grid;
-  overflow-wrap: anywhere;   /* long DOIs wrap on narrow screens */
   gap: 1rem;
   list-style: decimal;
   padding-left: 1.25rem;
   font-size: 0.8125rem;
   line-height: 1.55;
   color: var(--plum-soft);
+  overflow-wrap: anywhere;
 }
 .sources__list li::marker { color: var(--orchid-deep); font-weight: 700; }
 .sources__list cite { font-style: italic; }
-.sources__list a {
-  color: var(--plum);
-  font-weight: 500;
-  overflow-wrap: anywhere;
-  text-decoration-color: var(--orchid);
-  text-underline-offset: 0.2em;
-}
-.sources__list a:hover { text-decoration-color: var(--coral); }
 .sources__link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   min-height: 32px;
   margin-left: 0.15rem;
+  color: var(--plum);
   font-weight: 700;
   white-space: nowrap;
+  text-decoration-color: var(--orchid);
+  text-underline-offset: 0.2em;
 }
-.sources__link::after {
-  /* small "opens elsewhere" arrow, drawn in CSS so it inherits the link colour */
-  content: "";
-  width: 0.55em; height: 0.55em;
-  border-top: 1.5px solid currentColor;
-  border-right: 1.5px solid currentColor;
-  transform: rotate(45deg) translate(-1px, 1px);
-}
-.sources__note { margin-top: 1rem; font-size: 0.75rem; color: var(--plum-soft); max-width: 52ch; }
+.sources__link:hover { text-decoration-color: var(--coral); }
+.sources__sub { margin: 1.5rem 0 0.75rem; color: var(--plum-soft); font-size: 0.6875rem; }
+.sources__note { margin-top: 1.25rem; font-size: 0.75rem; color: var(--plum-soft); max-width: 52ch; }
 
 /* closing line that hands over to Notice / Understand / Choose */
 .reflect__bridge {

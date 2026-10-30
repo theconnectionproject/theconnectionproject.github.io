@@ -185,13 +185,6 @@
   const threadUpdates = [...document.querySelectorAll("[data-thread]")].map(setupThread);
   const updateThreads = () => threadUpdates.forEach((fn) => fn());
 
-  /* ---------- Citation links open the sources panel ---------- */
-  const sources = document.getElementById("research-sources");
-  if (sources) {
-    const openSources = () => { sources.open = true; };
-    document.querySelectorAll('a[href="#research-sources"]').forEach((a) => a.addEventListener("click", openSources));
-    if (location.hash === "#research-sources") openSources();
-  }
 
   /* ---------- One rAF-throttled scroll handler ---------- */
   let ticking = false;

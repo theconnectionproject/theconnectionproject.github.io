@@ -46,11 +46,12 @@ then visit http://localhost:8000.
 - If either PDF is updated, replace the file with the same name. Re-render `pages/page-01.webp`
   (the cover) if the cover changes.
 
-## Research references
+## Research-informed section
 
-The "Why reflection matters" section cites three sources in an expandable "Explore the research" panel
-(`<details id="research-sources">` in `index.html`). Citations on each idea link to that panel.
-The panel notes that the studies inform the project's thinking and do not evaluate Between Us.
+"Why reflection matters" cites London, Sessa & Shelley (2023), Lovis-Schmidt et al. (2024) and
+Murdoch et al. (2023); each citation links straight to the article in a new tab. The "Explore the
+research" panel lists those three full references plus Hoult et al. (2025) as a supplementary source on
+reflective writing, with a note that the studies give context for the project and do not test Between Us.
 
 ## Journal reader
 
