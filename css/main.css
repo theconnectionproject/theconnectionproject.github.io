@@ -270,8 +270,8 @@ h1, h2, h3, .display {
   min-height: var(--header-h);
 }
 
-/* Logo: primary logo (left aligned) in brand colours, set in DM Sans; inlined so the web font renders */
-.logo__svg { display: block; height: 60px; width: auto; aspect-ratio: 960 / 240; overflow: visible; }
+/* Logo: stacked logo (line + node above THE / CONNECTION / PROJECT) in brand plum, set in DM Sans; inlined so the web font renders */
+.logo__svg { display: block; height: 68px; width: auto; aspect-ratio: 1000 / 624; overflow: visible; }
 
 .site-nav ul { display: flex; gap: clamp(1.25rem, 2.6vw, 2.75rem); }
 .site-nav a {
@@ -368,11 +368,11 @@ h1, h2, h3, .display {
 }
 
 @media (max-width: 1023px) {
-  .logo__svg { height: 54px; }
+  .logo__svg { height: 62px; }
 }
 @media (max-width: 440px) {
   :root { --header-h: 76px; }
-  .logo__svg { height: 46px; }
+  .logo__svg { height: 56px; }
 }
 
 /* ---------- Footer ---------- */
@@ -390,7 +390,7 @@ h1, h2, h3, .display {
   padding-top: 2.5rem;
   border-top: 1px solid var(--rule-on-plum);
 }
-.footer__logo { display: block; height: clamp(60px, 4vw + 40px, 84px); width: auto; aspect-ratio: 960 / 240; margin-left: -8px; overflow: visible; }
+.footer__logo { display: block; height: clamp(96px, 5vw + 60px, 132px); width: auto; aspect-ratio: 1000 / 624; overflow: visible; }
 .footer__name {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);

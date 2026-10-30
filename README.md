@@ -28,7 +28,7 @@ assets/journal/       The two supplied PDFs, plus pages/ (cover + opening pages 
   `--coral`, `--cream`, `--font-display`, `--fs-hero` …). Change them there and the whole site follows.
 - **Fonts**: Anton (headlines) and DM Sans (body), the same faces used in the journal, loaded from Google Fonts.
 - **Header and footer** are repeated in each HTML file. If you change navigation, update all three pages.
-- **Logo**: the primary logo in brand colours, set in DM Sans, is inlined in each page: plum in the header, cream in the plum footer. Standalone copies are in `assets/brand/` (`logo-primary-left.svg`, `logo-primary-left-cream.svg`). If the logo changes, update the `logo__svg` and `footer__logo` blocks in all three pages.
+- **Logo**: the stacked logo (a line with a node above THE / CONNECTION / PROJECT) in brand plum, set in DM Sans, is inlined in each page: plum in the header, cream in the plum footer. Standalone copies: `assets/brand/logo-primary-left.svg` and `logo-primary-left-cream.svg`. If the logo changes, update the `logo__svg` and `footer__logo` blocks in all three pages.
 - **Reduced motion**: all animation switches off when the visitor's system asks for reduced motion.
 
 ## Running locally
