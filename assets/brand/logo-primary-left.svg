@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="960" height="240" role="img" aria-label="The Connection Project">
+<style>@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&amp;display=swap");</style>
+<g transform="translate(20,52) scale(0.99)" fill="none" stroke-linecap="round">
+  <path d="M 14 42 C 61 2, 109 3, 161 65 C 211 125, 265 124, 318 57" stroke="#41264E" stroke-width="5"/>
+  <path d="M 14 96 C 68 128, 116 117, 161 65 C 211 9, 260 -2, 318 38" stroke="#EFA99D" stroke-width="5"/>
+  <path d="M 14 109 C 79 103, 111 99, 161 65 C 217 36, 280 83, 318 108" stroke="#CBB5DB" stroke-width="3" opacity="0.5"/>
+  <circle cx="161" cy="65" r="10" fill="#9E77B8"/>
+</g>
+<g fill="#41264E" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+  <text x="365" y="78" font-size="28" font-weight="500" letter-spacing="13">THE</text>
+  <text x="361" y="158" font-size="92" font-weight="700" letter-spacing="-1">CONNECTION</text>
+  <text x="365" y="208" font-size="28" font-weight="500" letter-spacing="13">PROJECT</text>
+</g>
+</svg>

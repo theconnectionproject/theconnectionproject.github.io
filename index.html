@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Connection Project</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="The Connection Project is a design-led initiative exploring how we understand ourselves, navigate relationships and build meaningful connections. Explore. Reflect. Connect.">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER (shared across pages) ============ -->
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="logo" href="./" aria-label="The Connection Project, home">
+      <svg class="logo__svg" viewBox="0 0 960 240" aria-hidden="true" focusable="false">
+        <g transform="translate(20,52) scale(0.99)" fill="none" stroke-linecap="round">
+          <path d="M 14 42 C 61 2, 109 3, 161 65 C 211 125, 265 124, 318 57" stroke="#41264E" stroke-width="5"/>
+          <path d="M 14 96 C 68 128, 116 117, 161 65 C 211 9, 260 -2, 318 38" stroke="#EFA99D" stroke-width="5"/>
+          <path d="M 14 109 C 79 103, 111 99, 161 65 C 217 36, 280 83, 318 108" stroke="#CBB5DB" stroke-width="3" opacity="0.5"/>
+          <circle cx="161" cy="65" r="10" fill="#9E77B8"/>
+        </g>
+        <g fill="#41264E" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+          <text x="365" y="78" font-size="28" font-weight="500" letter-spacing="13">THE</text>
+          <text x="361" y="158" font-size="92" font-weight="700" letter-spacing="-1">CONNECTION</text>
+          <text x="365" y="208" font-size="28" font-weight="500" letter-spacing="13">PROJECT</text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="sr-only">Menu</span><span class="nav-toggle__lines" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main" data-nav>
+      <ul>
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="between-us.html">Between Us</a></li>
+        <li><a href="explore.html">Explore</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 01 HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__art" aria-hidden="true">
+      <svg class="hero__svg" viewBox="110 0 900 900" preserveAspectRatio="xMinYMid slice">
+        <defs>
+          <linearGradient id="hg-peach" x1="0" y1="0" x2="1" y2=".7"><stop offset="0" stop-color="#F8D7CF" stop-opacity=".55"/><stop offset=".66" stop-color="#EFA99D" stop-opacity=".5"/><stop offset="1" stop-color="#F6CCBE" stop-opacity=".3"/></linearGradient>
+          <linearGradient id="hg-violet" x1=".12" y1=".08" x2=".85" y2="1"><stop offset="0" stop-color="#D9C2E3" stop-opacity=".45"/><stop offset="1" stop-color="#8C68A7" stop-opacity=".7"/></linearGradient>
+          <linearGradient id="hg-lilac" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#E1CFE8" stop-opacity=".5"/><stop offset="1" stop-color="#B795CC" stop-opacity=".6"/></linearGradient>
+          <linearGradient id="hg-orchid" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEE3F1" stop-opacity=".6"/><stop offset=".55" stop-color="#CBB5DB" stop-opacity=".6"/><stop offset="1" stop-color="#9470B1" stop-opacity=".55"/></linearGradient>
+          <linearGradient id="hg-line-plum" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="940" y2="0"><stop offset="0" stop-color="#C4A7D6" stop-opacity="0"/><stop offset=".2" stop-color="#C4A7D6"/><stop offset=".6" stop-color="#946DB1"/><stop offset="1" stop-color="#5C3B72"/></linearGradient>
+          <clipPath id="hg-clip"><rect x="110" y="-200" width="1000" height="1300"/></clipPath>
+          <linearGradient id="hg-line-coral" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="940" y2="0"><stop offset="0" stop-color="#BFA6D1" stop-opacity="0"/><stop offset=".22" stop-color="#BFA6D1"/><stop offset=".62" stop-color="#EFA99D"/><stop offset="1" stop-color="#C4A1CC"/></linearGradient>
+        </defs>
+        <g class="hero__shapes" data-parallax="-0.06">
+          <circle class="float float--a" cx="600" cy="250" r="320" fill="url(#hg-peach)"/>
+          <circle class="float float--b" cx="790" cy="600" r="300" fill="url(#hg-violet)"/>
+          <circle class="float float--c" cx="430" cy="720" r="250" fill="url(#hg-lilac)"/>
+          <circle class="float float--d" cx="250" cy="330" r="150" fill="url(#hg-orchid)" opacity=".55"/>
+        </g>
+        <g class="hero__lines" data-parallax="0.04" clip-path="url(#hg-clip)">
+          <path class="hero__dashed flow" d="M190 -20 C300 200 230 380 380 500 S640 800 920 860" fill="none" stroke="#B89BCB" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <path class="draw" pathLength="1" d="M-20 470 C120 600 250 640 380 500 S600 250 720 360 S880 560 940 540" fill="none" stroke="url(#hg-line-plum)" stroke-width="5" stroke-linecap="round"/>
+          <path class="draw draw--late" pathLength="1" d="M-20 620 C130 330 280 300 410 460 S610 580 720 360 S860 170 940 130" fill="none" stroke="url(#hg-line-coral)" stroke-width="4.6" stroke-linecap="round"/>
+          <g class="spin"><circle class="node-ring" cx="380" cy="500" r="42" fill="none" stroke="#9E77B8" stroke-width="1.5" stroke-dasharray="3 6"/></g>
+          <g class="breathe"><circle class="node node--1" cx="380" cy="500" r="10" fill="#9871B1"/></g>
+          <circle class="node-pulse" cx="720" cy="360" r="17" fill="none" stroke="#EFA99D" stroke-width="2"/>
+          <g class="breathe breathe--slow"><circle class="node node--2" cx="720" cy="360" r="17" fill="#EFA99D"/></g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero__inner">
+      <p class="label hero__eyebrow">Explore. Reflect. Connect.</p>
+      <h1 id="hero-title" class="hero__title">
+        <span>Connection is</span>
+        <span>more than</span>
+        <span class="hl">what we see.</span>
+      </h1>
+      <p class="hero__lead lead">We all carry patterns, experiences and emotions into our relationships. What happens when we begin to notice them?</p>
+      <div class="hero__actions">
+        <a class="btn" href="#about">Explore the project <span class="btn__node" aria-hidden="true"></span></a>
+        <a class="link-line" href="between-us.html">Discover Between Us</a>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#about">
+      <span class="label">Scroll</span>
+      <span class="scroll-cue__track" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ============ 02 ABOUT ============ -->
+  <section id="about" class="about section" aria-labelledby="about-title">
+    <div class="wrap about__grid">
+      <div class="about__text">
+        <div class="tab-rule" data-reveal><span class="tab">About the project</span></div>
+        <h2 id="about-title" class="h-xl" data-reveal>Every connection has <span class="hl">a story.</span></h2>
+        <div class="about__copy" data-reveal>
+          <p class="lead">The way we connect with others is shaped by our experiences, emotions and the patterns we carry with us. Some are easy to recognise, while others sit beneath the surface.</p>
+          <p class="muted">The Connection Project creates space to explore these patterns, encouraging reflection, understanding and more intentional ways of connecting.</p>
+        </div>
+      </div>
+
+      <figure class="about__art" aria-hidden="true" data-draw-on-view>
+        <svg class="about__svg" viewBox="0 0 600 680">
+          <defs>
+            <linearGradient id="ab-peach" x1="0" y1="0" x2="1" y2=".7"><stop offset="0" stop-color="#F8D7CF" stop-opacity=".55"/><stop offset=".66" stop-color="#EFA99D" stop-opacity=".5"/><stop offset="1" stop-color="#F6CCBE" stop-opacity=".3"/></linearGradient>
+            <linearGradient id="ab-violet" x1=".12" y1=".08" x2=".85" y2="1"><stop offset="0" stop-color="#D9C2E3" stop-opacity=".45"/><stop offset="1" stop-color="#8C68A7" stop-opacity=".7"/></linearGradient>
+            <linearGradient id="ab-lilac" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#E1CFE8" stop-opacity=".55"/><stop offset="1" stop-color="#B795CC" stop-opacity=".6"/></linearGradient>
+          </defs>
+          <g data-parallax="-0.05">
+            <circle class="float" cx="430" cy="250" r="210" fill="url(#ab-peach)"/>
+            <circle class="float float--b" cx="480" cy="470" r="220" fill="url(#ab-violet)"/>
+            <circle class="float float--c" cx="270" cy="500" r="180" fill="url(#ab-lilac)"/>
+          </g>
+          <path class="draw" pathLength="1" d="M-10 140 C120 120 160 220 200 260 S330 380 380 420 S520 560 620 520" fill="none" stroke="#41264E" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="draw draw--late" pathLength="1" d="M150 -10 C170 80 230 130 300 170 S370 300 380 420 S430 600 470 690" fill="none" stroke="#9E77B8" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="breathe" cx="200" cy="260" r="9" fill="#41264E"/>
+          <circle class="breathe breathe--late" cx="300" cy="170" r="9" fill="#9E77B8"/>
+          <circle class="spin" cx="380" cy="420" r="38" fill="none" stroke="#41264E" stroke-width="1.2" stroke-dasharray="3 6"/>
+          <circle class="breathe breathe--slow" cx="380" cy="420" r="15" fill="#EFA99D"/>
+          <text x="186" y="300" text-anchor="end" class="about__tag">Experiences</text>
+          <text x="318" y="160" class="about__tag">Emotions</text>
+          <text x="432" y="414" class="about__tag">Patterns</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 03 WHY REFLECTION MATTERS (research-informed thinking) ============ -->
+  <section id="thinking" class="reflect section" aria-labelledby="reflect-title" data-thread="column">
+    <svg class="reflect__shapes" viewBox="0 0 600 900" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="rf-lilac" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#E1CFE8" stop-opacity=".5"/><stop offset="1" stop-color="#B795CC" stop-opacity=".45"/></linearGradient>
+        <linearGradient id="rf-peach" x1="0" y1="0" x2="1" y2=".7"><stop offset="0" stop-color="#F8D7CF" stop-opacity=".5"/><stop offset="1" stop-color="#EFA99D" stop-opacity=".3"/></linearGradient>
+      </defs>
+      <g data-parallax="-0.05">
+        <circle class="float float--c" cx="430" cy="290" r="270" fill="url(#rf-lilac)"/>
+        <circle class="float float--d" cx="170" cy="700" r="150" fill="url(#rf-peach)"/>
+      </g>
+    </svg>
+    <svg class="thread__svg" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="rf-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CBB5DB"/><stop offset=".55" stop-color="#9E77B8"/><stop offset="1" stop-color="#EFA99D"/></linearGradient>
+      </defs>
+      <path class="thread__bg flow" data-thread-bg d="" fill="none"/>
+      <path class="thread__line" data-thread-path d="" fill="none" stroke="url(#rf-grad)"/>
+    </svg>
+
+    <div class="wrap">
+      <div class="reflect__grid">
+        <div class="reflect__intro">
+          <div class="tab-rule" data-reveal><span class="tab">The thinking behind connection</span></div>
+          <h2 id="reflect-title" class="h-xl" data-reveal>Why reflection <span class="hl">matters.</span></h2>
+          <div class="reflect__copy" data-reveal>
+            <p class="reflect__opener">Sometimes understanding begins with noticing.</p>
+            <p>The way we respond to others is often influenced by our experiences, emotions and familiar patterns. Taking time to reflect creates an opportunity to look beneath our immediate reactions and consider what might be shaping them.</p>
+            <p class="muted">Research into self-reflection, personal insight and emotion regulation offers useful perspectives on how we understand ourselves and relate to others.</p>
+            <p class="reflect__curiosity">But reflection isn’t about having all the answers. It’s about approaching our experiences with curiosity rather than judgement.</p>
+          </div>
+        </div>
+
+        <div class="reflect__ideas-wrap">
+          <span class="reflect__start" data-thread-start aria-hidden="true"></span>
+          <ol class="reflect__ideas">
+            <li class="idea" data-thread-item>
+              <span class="idea__node" data-thread-anchor aria-hidden="true"></span>
+              <div class="idea__body" data-reveal>
+                <p class="idea__num">01</p>
+                <h3 class="idea__title">Becoming more aware</h3>
+                <p class="idea__text">Self-reflection gives us space to examine our thoughts, feelings and behaviours. Developing insight into these experiences may help us recognise patterns that aren’t always obvious.</p>
+                <a class="idea__cite" href="#research-sources">Grant, Franklin &amp; Langford (2002)</a>
+              </div>
+            </li>
+            <li class="idea" data-thread-item>
+              <span class="idea__node" data-thread-anchor aria-hidden="true"></span>
+              <div class="idea__body" data-reveal>
+                <p class="idea__num">02</p>
+                <h3 class="idea__title">Understanding our emotions</h3>
+                <p class="idea__text">How we understand and manage our emotions can influence the way we communicate and connect. Looking beneath our reactions can offer a different perspective on our experiences.</p>
+                <a class="idea__cite" href="#research-sources">Gross &amp; John (2003)</a>
+              </div>
+            </li>
+            <li class="idea" data-thread-item>
+              <span class="idea__node" data-thread-anchor aria-hidden="true"></span>
+              <div class="idea__body" data-reveal>
+                <p class="idea__num">03</p>
+                <h3 class="idea__title">Making space to reflect</h3>
+                <p class="idea__text">Reflective writing offers one way to explore our experiences more intentionally. It creates an opportunity to slow down, organise our thoughts and consider different perspectives.</p>
+                <a class="idea__cite" href="#research-sources">Sohal et al. (2022)</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="reflect__foot">
+        <details class="sources" id="research-sources">
+          <summary class="sources__toggle"><span>Explore the research</span><span class="sources__icon" aria-hidden="true"></span></summary>
+          <div class="sources__panel">
+            <ol class="sources__list">
+              <li>Grant, A. M., Franklin, J., &amp; Langford, P. (2002). The Self-Reflection and Insight Scale: A new measure of private self-consciousness. <cite>Social Behavior and Personality, 30</cite>(8), 821–836. <a href="https://doi.org/10.2224/sbp.2002.30.8.821" target="_blank" rel="noopener">doi.org/10.2224/sbp.2002.30.8.821<span class="sr-only"> (opens in a new tab)</span></a></li>
+              <li>Gross, J. J., &amp; John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. <cite>Journal of Personality and Social Psychology, 85</cite>(2), 348–362. <a href="https://doi.org/10.1037/0022-3514.85.2.348" target="_blank" rel="noopener">doi.org/10.1037/0022-3514.85.2.348<span class="sr-only"> (opens in a new tab)</span></a></li>
+              <li>Sohal, M., Singh, P., Dhillon, B. S., &amp; Gill, H. S. (2022). Efficacy of journaling in the management of mental illness: A systematic review and meta-analysis. <cite>Family Medicine and Community Health, 10</cite>(1), e001154. <a href="https://doi.org/10.1136/fmch-2021-001154" target="_blank" rel="noopener">doi.org/10.1136/fmch-2021-001154<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ol>
+            <p class="sources__note">These studies inform the thinking behind The Connection Project. They do not evaluate Between Us, which is a reflective design project rather than a clinical or therapeutic tool.</p>
+          </div>
+        </details>
+
+        <p class="reflect__bridge">
+          <span class="bridge__node" data-thread-end aria-hidden="true"></span>
+          <span class="bridge__text" data-reveal>
+            <span>Notice the pattern.</span>
+            <span>Understand the feeling.</span>
+            <span class="bridge__next">Explore what comes next.</span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 NOTICE / UNDERSTAND / CHOOSE ============ -->
+  <section class="nuc section" aria-labelledby="nuc-title" data-thread="edges">
+    <svg class="thread__svg" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="nuc-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#CBB5DB"/><stop offset=".5" stop-color="#9E77B8"/><stop offset="1" stop-color="#EFA99D"/></linearGradient>
+      </defs>
+      <path class="thread__bg flow" data-thread-bg d="" fill="none"/>
+      <path class="thread__line" data-thread-path d="" fill="none" stroke="url(#nuc-grad)"/>
+    </svg>
+
+    <div class="wrap">
+      <div class="nuc__head">
+        <div class="tab-rule" data-reveal><span class="tab">Three central ideas</span></div>
+        <h2 id="nuc-title" class="nuc__title" data-reveal>Notice. Understand. <span class="hl">Choose.</span></h2>
+      </div>
+
+      <ol class="nuc__list">
+        <li class="nuc__item" data-thread-item>
+          <div class="nuc__graphic" data-thread-anchor aria-hidden="true">
+            <svg viewBox="0 0 220 220">
+              <circle cx="110" cy="110" r="100" fill="#CBB5DB" opacity=".35"/>
+              <circle class="spin" cx="110" cy="110" r="70" fill="none" stroke="#9E77B8" stroke-width="1.5" stroke-dasharray="3 7"/>
+              <circle cx="110" cy="110" r="38" fill="#CBB5DB" opacity=".75"/>
+              <circle class="nuc__node" cx="110" cy="110" r="11"/>
+            </svg>
+          </div>
+          <div class="nuc__copy">
+            <p class="nuc__num label">01</p>
+            <h3 class="nuc__name">Notice</h3>
+            <p class="nuc__text">Recognise the patterns, feelings and behaviours that appear in our relationships.</p>
+          </div>
+        </li>
+
+        <li class="nuc__item" data-thread-item>
+          <div class="nuc__graphic" data-thread-anchor aria-hidden="true">
+            <svg viewBox="0 0 220 220">
+              <ellipse cx="110" cy="72" rx="96" ry="58" fill="#CBB5DB" opacity=".45"/>
+              <ellipse cx="110" cy="112" rx="82" ry="52" fill="#B795CC" opacity=".35"/>
+              <ellipse cx="110" cy="150" rx="66" ry="44" fill="#8C68A7" opacity=".3"/>
+              <path d="M110 4 V96" stroke="#41264E" stroke-width="1.5" stroke-dasharray="2 6" stroke-linecap="round"/>
+              <circle class="nuc__node" cx="110" cy="110" r="11"/>
+            </svg>
+          </div>
+          <div class="nuc__copy">
+            <p class="nuc__num label">02</p>
+            <h3 class="nuc__name">Understand</h3>
+            <p class="nuc__text">Explore what might be influencing our reactions, emotions and needs.</p>
+          </div>
+        </li>
+
+        <li class="nuc__item" data-thread-item>
+          <div class="nuc__graphic" data-thread-anchor aria-hidden="true">
+            <svg viewBox="0 0 220 220">
+              <circle cx="122" cy="110" r="96" fill="#CBB5DB" opacity=".3"/>
+              <path d="M110 110 C150 125 168 172 204 182" fill="none" stroke="#B89BCB" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+              <circle cx="204" cy="182" r="7" fill="none" stroke="#B89BCB" stroke-width="2"/>
+              <path d="M110 110 C150 92 166 48 204 38" fill="none" stroke="#41264E" stroke-width="3" stroke-linecap="round"/>
+              <circle class="breathe" cx="204" cy="38" r="8" fill="#EFA99D"/>
+              <circle class="nuc__node" cx="110" cy="110" r="11"/>
+            </svg>
+          </div>
+          <div class="nuc__copy">
+            <p class="nuc__num label">03</p>
+            <h3 class="nuc__name">Choose</h3>
+            <p class="nuc__text">Consider how greater self-awareness can support more intentional responses.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 05 INTRODUCING BETWEEN US ============ -->
+  <section class="journal section" aria-labelledby="journal-title">
+    <img class="journal__deco" src="assets/graphics/shapes-circles.png" alt="" width="693" height="608" loading="lazy" aria-hidden="true">
+    <div class="wrap journal__grid">
+      <figure class="journal__mock" data-reveal>
+        <img class="journal__page journal__page--back" src="assets/journal/pages/page-02.webp" alt="" width="1075" height="1521" loading="lazy">
+        <img class="journal__page journal__page--cover" src="assets/journal/pages/page-01.webp" alt="The cover of Between Us: a lavender page with layered translucent shapes, a single connection line and the title Between Us." width="1075" height="1521" loading="lazy">
+        <figcaption class="sr-only">Between Us journal cover, with the opening page behind it.</figcaption>
+      </figure>
+
+      <div class="journal__text">
+        <div class="tab-rule" data-reveal><span class="tab">A guided reflective journal</span></div>
+        <h2 id="journal-title" class="h-xl" data-reveal>A more <span class="hl">intentional</span> you.</h2>
+        <div class="journal__copy" data-reveal>
+          <p class="lead">Between Us is a guided reflective journal designed to help you notice, understand and explore the patterns you carry into connection.</p>
+          <p class="muted">Through creative activities, visual mapping and personal reflection, the journal invites you to explore your relationships from a different perspective.</p>
+        </div>
+        <dl class="journal__facts" data-reveal>
+          <div><dt class="label">Pages</dt><dd>20</dd></div>
+          <div><dt class="label">Activities</dt><dd>07</dd></div>
+          <div><dt class="label">Final reflection</dt><dd>01</dd></div>
+        </dl>
+        <div data-reveal>
+          <a class="btn" href="between-us.html">Explore the journal <span class="btn__node" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 CLOSING ============ -->
+  <section class="closing on-plum" aria-labelledby="closing-title" data-draw-on-view>
+    <svg class="closing__svg" viewBox="0 0 1440 760" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="cl-a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#CBB5DB" stop-opacity=".15"/><stop offset=".55" stop-color="#CBB5DB"/><stop offset="1" stop-color="#9E77B8"/></linearGradient>
+        <linearGradient id="cl-b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9E77B8" stop-opacity=".1"/><stop offset=".6" stop-color="#EFA99D"/><stop offset="1" stop-color="#CBB5DB"/></linearGradient>
+        <radialGradient id="cl-glow"><stop offset="0" stop-color="#9E77B8" stop-opacity=".35"/><stop offset="1" stop-color="#9E77B8" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="1100" cy="380" r="420" fill="url(#cl-glow)"/>
+      <circle class="float float--b" cx="1300" cy="660" r="240" fill="#CBB5DB" opacity=".07"/>
+      <path class="draw" pathLength="1" d="M760 820 C860 700 940 560 1060 430 S1300 170 1490 200" fill="none" stroke="url(#cl-a)" stroke-width="3.5" stroke-linecap="round"/>
+      <path class="draw draw--late" pathLength="1" d="M860 -30 C900 150 960 320 1060 430 S1260 650 1490 610" fill="none" stroke="url(#cl-b)" stroke-width="3.5" stroke-linecap="round"/>
+      <path class="flow" d="M1210 -20 C1140 160 1310 310 1250 480 S1190 700 1320 800" fill="none" stroke="#CBB5DB" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <circle class="spin" cx="1060" cy="430" r="46" fill="none" stroke="#CBB5DB" stroke-opacity=".5" stroke-width="1.2" stroke-dasharray="3 6"/>
+      <circle class="breathe breathe--slow" cx="1060" cy="430" r="15" fill="#EFA99D"/>
+      <circle class="breathe breathe--late" cx="1250" cy="480" r="8" fill="#CBB5DB"/>
+    </svg>
+    <div class="wrap closing__inner">
+      <div class="tab-rule" data-reveal><span class="tab">Between Us</span></div>
+      <h2 id="closing-title" class="closing__title" data-reveal><span>Connection</span> <span>doesn’t</span> <span class="closing__hl">end here.</span></h2>
+      <p class="closing__text lead" data-reveal>Understanding ourselves is an ongoing process. Every moment of reflection can offer a new perspective on the way we connect.</p>
+      <div data-reveal>
+        <a class="btn btn--light" href="between-us.html">Read the journal <span class="btn__node" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER (shared across pages) ============ -->
+<footer class="site-footer">
+  <div class="wrap footer__inner">
+    <div>
+      <svg class="footer__logo" viewBox="0 0 960 240" role="img" aria-label="The Connection Project">
+        <g transform="translate(20,52) scale(0.99)" fill="none" stroke-linecap="round">
+          <path d="M 14 42 C 61 2, 109 3, 161 65 C 211 125, 265 124, 318 57" stroke="#F7F0E9" stroke-width="5"/>
+          <path d="M 14 96 C 68 128, 116 117, 161 65 C 211 9, 260 -2, 318 38" stroke="#EFA99D" stroke-width="5"/>
+          <path d="M 14 109 C 79 103, 111 99, 161 65 C 217 36, 280 83, 318 108" stroke="#CBB5DB" stroke-width="3" opacity="0.65"/>
+          <circle cx="161" cy="65" r="10" fill="#9E77B8"/>
+        </g>
+        <g fill="#F7F0E9" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+          <text x="365" y="78" font-size="28" font-weight="500" letter-spacing="13">THE</text>
+          <text x="361" y="158" font-size="92" font-weight="700" letter-spacing="-1">CONNECTION</text>
+          <text x="365" y="208" font-size="28" font-weight="500" letter-spacing="13">PROJECT</text>
+        </g>
+      </svg>
+      <p class="footer__tag">Explore. Reflect. Connect.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="between-us.html">Between Us</a></li>
+        <li><a href="explore.html">Explore</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap"><p class="footer__base">The Connection Project is a design-led reflective project. It is not a clinical, diagnostic or therapy service.</p></div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

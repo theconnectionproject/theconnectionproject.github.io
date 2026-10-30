@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explore Connection</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Explore four ideas from Between Us through simple interactive visuals: recognising patterns, what sits beneath a reaction, closeness and space, and communicating needs.">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER (shared across pages) ============ -->
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="logo" href="./" aria-label="The Connection Project, home">
+      <svg class="logo__svg" viewBox="0 0 960 240" aria-hidden="true" focusable="false">
+        <g transform="translate(20,52) scale(0.99)" fill="none" stroke-linecap="round">
+          <path d="M 14 42 C 61 2, 109 3, 161 65 C 211 125, 265 124, 318 57" stroke="#41264E" stroke-width="5"/>
+          <path d="M 14 96 C 68 128, 116 117, 161 65 C 211 9, 260 -2, 318 38" stroke="#EFA99D" stroke-width="5"/>
+          <path d="M 14 109 C 79 103, 111 99, 161 65 C 217 36, 280 83, 318 108" stroke="#CBB5DB" stroke-width="3" opacity="0.5"/>
+          <circle cx="161" cy="65" r="10" fill="#9E77B8"/>
+        </g>
+        <g fill="#41264E" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+          <text x="365" y="78" font-size="28" font-weight="500" letter-spacing="13">THE</text>
+          <text x="361" y="158" font-size="92" font-weight="700" letter-spacing="-1">CONNECTION</text>
+          <text x="365" y="208" font-size="28" font-weight="500" letter-spacing="13">PROJECT</text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="sr-only">Menu</span><span class="nav-toggle__lines" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main" data-nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="between-us.html">Between Us</a></li>
+        <li><a href="explore.html" aria-current="page">Explore</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero ex-hero" aria-labelledby="page-title">
+    <img class="page-hero__deco" src="assets/graphics/shapes-circles.png" alt="" width="693" height="608" aria-hidden="true">
+    <div class="wrap">
+      <div class="ex-hero__text">
+        <div class="tab-rule"><span class="tab">Explore connection</span></div>
+        <h1 id="page-title" class="page-hero__title">Explore <span class="hl">connection.</span></h1>
+        <p class="page-hero__lead lead">Four ideas from Between Us, explored through lines, layers and space. Move things around, look a little deeper and notice what resonates.</p>
+        <p class="ex-hero__privacy">Nothing you choose on this page is saved or shared.</p>
+      </div>
+      <nav class="ex-index" aria-label="On this page">
+        <ol>
+          <li><a href="#patterns"><span class="ex-index__n">01</span><span class="ex-index__t">Recognising patterns</span></a></li>
+          <li><a href="#beneath"><span class="ex-index__n">02</span><span class="ex-index__t">Beneath the reaction</span></a></li>
+          <li><a href="#closeness"><span class="ex-index__n">03</span><span class="ex-index__t">Closeness &amp; space</span></a></li>
+          <li><a href="#needs"><span class="ex-index__n">04</span><span class="ex-index__t">Communicating needs</span></a></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ 01 RECOGNISING PATTERNS ============ -->
+  <section id="patterns" class="ex section" aria-labelledby="patterns-title">
+    <div class="wrap ex__grid">
+      <div class="ex__text">
+        <p class="ex__num" data-reveal>01</p>
+        <h2 id="patterns-title" class="h-xl" data-reveal>Recognising <span class="hl">patterns.</span></h2>
+        <div class="ex__copy" data-reveal>
+          <p class="lead">Patterns are the responses we return to again and again, especially when connection feels uncertain.</p>
+          <p class="muted">Some are easy to notice. Others feel so familiar that we barely see them. Try placing each response along the line, based on how familiar it feels to you.</p>
+        </div>
+        <a class="ex__journal" href="between-us.html#page-4"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Activity 01 · Recognise · p.04</span></a>
+      </div>
+
+      <div class="ex__interactive">
+        <div class="pmap" data-pattern-map>
+          <div class="pmap__scale" aria-hidden="true"><span>Less familiar</span><span>More familiar</span></div>
+          <svg class="pmap__svg" aria-hidden="true" focusable="false">
+            <defs><linearGradient id="pm-grad" data-pmap-grad gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="500"><stop offset="0" stop-color="#CBB5DB"/><stop offset=".6" stop-color="#9E77B8"/><stop offset="1" stop-color="#EFA99D"/></linearGradient></defs>
+            <path class="pmap__line" data-pmap-line d="" fill="none" stroke="url(#pm-grad)"/>
+          </svg>
+          <ol class="pmap__list">
+              <li class="pmap__row">
+                <label class="pmap__label" for="pm-1"><span class="pmap__n" aria-hidden="true">01</span><span>I go quiet or withdraw when I feel overwhelmed.</span></label>
+                <input class="pmap__range" id="pm-1" type="range" min="0" max="4" step="1" value="2">
+              </li>
+              <li class="pmap__row">
+                <label class="pmap__label" for="pm-2"><span class="pmap__n" aria-hidden="true">02</span><span>I take on other people’s emotions.</span></label>
+                <input class="pmap__range" id="pm-2" type="range" min="0" max="4" step="1" value="2">
+              </li>
+              <li class="pmap__row">
+                <label class="pmap__label" for="pm-3"><span class="pmap__n" aria-hidden="true">03</span><span>I look for reassurance when I feel uncertain.</span></label>
+                <input class="pmap__range" id="pm-3" type="range" min="0" max="4" step="1" value="2">
+              </li>
+              <li class="pmap__row">
+                <label class="pmap__label" for="pm-4"><span class="pmap__n" aria-hidden="true">04</span><span>I try to keep the peace, even when something bothers me.</span></label>
+                <input class="pmap__range" id="pm-4" type="range" min="0" max="4" step="1" value="2">
+              </li>
+              <li class="pmap__row">
+                <label class="pmap__label" for="pm-5"><span class="pmap__n" aria-hidden="true">05</span><span>I need space to process my thoughts and feelings.</span></label>
+                <input class="pmap__range" id="pm-5" type="range" min="0" max="4" step="1" value="2">
+              </li>
+          </ol>
+          <div class="pmap__notice">
+            <p class="label">What do you notice?</p>
+            <p data-pmap-summary aria-live="polite">Which responses feel most familiar to you? When do these responses usually appear?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 BENEATH THE REACTION ============ -->
+  <section id="beneath" class="ex ex--flip section" aria-labelledby="beneath-title">
+    <div class="wrap ex__grid">
+      <div class="ex__text">
+        <p class="ex__num" data-reveal>02</p>
+        <h2 id="beneath-title" class="h-xl" data-reveal>Beneath the <span class="hl">reaction.</span></h2>
+        <div class="ex__copy" data-reveal>
+          <blockquote class="ex__quote"><p>“What we show on the outside isn’t always what we feel on the inside.”</p><footer class="label">Between Us, Activity 06</footer></blockquote>
+          <p class="muted">In any moment of connection, a lot can be happening at once. Looking layer by layer can help us understand a reaction with more curiosity and less judgement.</p>
+        </div>
+        <div class="ex__links">
+          <a class="ex__journal" href="between-us.html#page-6"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Activity 02 · Map the moment · p.06</span></a>
+          <a class="ex__journal" href="between-us.html#page-14"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Activity 06 · Read between the lines · p.14</span></a>
+        </div>
+      </div>
+
+      <div class="ex__interactive">
+        <div class="layers" data-layers>
+          <svg class="layers__svg" viewBox="0 0 520 460" aria-hidden="true" focusable="false">
+            <path class="layers__surface" d="M10 150 C120 130 200 170 260 150 S420 130 510 150" fill="none"/>
+            <text x="510" y="182" text-anchor="end" class="layers__surface-label">Beneath the surface</text>
+            <g class="layer" data-layer="0">
+              <ellipse cx="260" cy="110" rx="250" ry="70" fill="#E6D8EC" fill-opacity=".9"/>
+              <text x="38" y="115" class="layer__label">Reaction</text>
+            </g>
+            <g class="layer" data-layer="1">
+              <ellipse cx="260" cy="205" rx="220" ry="62" fill="#D3BEE1" fill-opacity=".85"/>
+              <text x="68" y="210" class="layer__label">Thoughts</text>
+            </g>
+            <g class="layer" data-layer="2">
+              <ellipse cx="260" cy="292" rx="186" ry="54" fill="#BC9FD0" fill-opacity=".8"/>
+              <text x="102" y="297" class="layer__label">Feelings</text>
+            </g>
+            <g class="layer" data-layer="3">
+              <ellipse cx="260" cy="368" rx="148" ry="46" fill="#9E77B8" fill-opacity=".75"/>
+              <text x="140" y="373" class="layer__label">Needs</text>
+            </g>
+            <path class="layers__probe" d="M260 20 V430" fill="none"/>
+            <g class="layers__node-g" data-layers-node><circle class="layers__node-ring" cx="260" cy="110" r="22"/><circle class="layers__node" cx="260" cy="110" r="11"/></g>
+          </svg>
+          <div class="layers__tabs" role="tablist" aria-label="Layers beneath a reaction">
+              <button type="button" class="layers__tab" role="tab" id="layer-tab-0" aria-controls="layer-panel-0" aria-selected="true" tabindex="0" data-layer-tab="0"><span class="layers__tab-n" aria-hidden="true">01</span>Reaction</button>
+              <button type="button" class="layers__tab" role="tab" id="layer-tab-1" aria-controls="layer-panel-1" aria-selected="false" tabindex="-1" data-layer-tab="1"><span class="layers__tab-n" aria-hidden="true">02</span>Thoughts</button>
+              <button type="button" class="layers__tab" role="tab" id="layer-tab-2" aria-controls="layer-panel-2" aria-selected="false" tabindex="-1" data-layer-tab="2"><span class="layers__tab-n" aria-hidden="true">03</span>Feelings</button>
+              <button type="button" class="layers__tab" role="tab" id="layer-tab-3" aria-controls="layer-panel-3" aria-selected="false" tabindex="-1" data-layer-tab="3"><span class="layers__tab-n" aria-hidden="true">04</span>Needs</button>
+          </div>
+          <div class="layers__panels">
+            <div class="layers__panel" role="tabpanel" id="layer-panel-0" aria-labelledby="layer-tab-0" data-layer-panel="0">
+              <p class="layers__depth label">Layer 1 of 4 · On the surface</p>
+              <h3 class="layers__name">Reaction</h3>
+              <p class="layers__text">What others see: the words we say, a silence, a sharp reply, a step back. It’s often the quickest part of a moment, and the easiest to notice.</p>
+              <p class="layers__prompt"><span class="label">From the journal</span> How did I react?</p>
+            </div>
+            <div class="layers__panel" role="tabpanel" id="layer-panel-1" aria-labelledby="layer-tab-1" data-layer-panel="1">
+              <p class="layers__depth label">Layer 2 of 4 · Just beneath</p>
+              <h3 class="layers__name">Thoughts</h3>
+              <p class="layers__text">Under a reaction there are often thoughts moving quickly: assumptions, worries or stories about what the moment might mean.</p>
+              <p class="layers__prompt"><span class="label">From the journal</span> What was going through my mind?</p>
+            </div>
+            <div class="layers__panel" role="tabpanel" id="layer-panel-2" aria-labelledby="layer-tab-2" data-layer-panel="2">
+              <p class="layers__depth label">Layer 3 of 4 · Further down</p>
+              <h3 class="layers__name">Feelings</h3>
+              <p class="layers__text">Feelings can sit beneath those thoughts, and they aren’t always the ones we show. Frustration might cover hurt. Quiet might hold worry.</p>
+              <p class="layers__prompt"><span class="label">From the journal</span> What emotions did I notice?</p>
+            </div>
+            <div class="layers__panel" role="tabpanel" id="layer-panel-3" aria-labelledby="layer-tab-3" data-layer-panel="3">
+              <p class="layers__depth label">Layer 4 of 4 · At the centre</p>
+              <h3 class="layers__name">Needs</h3>
+              <p class="layers__text">At the deepest layer there may be a need: to feel heard, reassured, respected, or simply to have some space.</p>
+              <p class="layers__prompt"><span class="label">From the journal</span> What might I have needed in that moment?</p>
+            </div>
+          </div>
+          <button type="button" class="layers__next link-line" data-layers-next>Look a layer deeper</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 CLOSENESS & SPACE ============ -->
+  <section id="closeness" class="ex ex--plum on-plum section" aria-labelledby="closeness-title">
+    <div class="wrap ex__grid">
+      <div class="ex__text">
+        <p class="ex__num" data-reveal>03</p>
+        <h2 id="closeness-title" class="h-xl" data-reveal>Closeness <span class="hl">&amp; space.</span></h2>
+        <div class="ex__copy" data-reveal>
+          <p class="lead">Closeness and space aren’t opposites. Many of us need both: time together and time apart, openness and limits.</p>
+          <p class="muted">A boundary can be one way of looking after a connection, rather than stepping away from it.</p>
+        </div>
+        <div class="ex__links">
+          <a class="ex__journal" href="between-us.html#page-13"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Closeness &amp; space · p.13</span></a>
+          <a class="ex__journal" href="between-us.html#page-10"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Activity 04 · Draw the distance · p.10</span></a>
+        </div>
+      </div>
+
+      <div class="ex__interactive">
+        <figure class="venn" data-venn>
+          <svg class="venn__svg" viewBox="0 0 640 400" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="vn-a" cx=".4" cy=".35"><stop offset="0" stop-color="#E1CFE8" stop-opacity=".55"/><stop offset="1" stop-color="#B795CC" stop-opacity=".4"/></radialGradient>
+              <radialGradient id="vn-b" cx=".6" cy=".35"><stop offset="0" stop-color="#D9C2E3" stop-opacity=".45"/><stop offset="1" stop-color="#8C68A7" stop-opacity=".45"/></radialGradient>
+              <clipPath id="vn-clip"><circle data-venn-clip cx="210" cy="200" r="150"/></clipPath>
+            </defs>
+            <circle class="venn__circle" data-venn-a cx="210" cy="200" r="150" fill="url(#vn-a)"/>
+            <circle class="venn__circle" data-venn-b cx="430" cy="200" r="150" fill="url(#vn-b)"/>
+            <circle class="venn__overlap" data-venn-overlap cx="430" cy="200" r="150" clip-path="url(#vn-clip)"/>
+            <g class="venn__labels">
+              <text data-venn-la x="160" y="196" text-anchor="middle" class="venn__title">Connection</text>
+              <text data-venn-la2 x="160" y="220" text-anchor="middle" class="venn__sub">I value</text>
+              <text data-venn-lb x="480" y="196" text-anchor="middle" class="venn__title">Space</text>
+              <text data-venn-lb2 x="480" y="220" text-anchor="middle" class="venn__sub">I need</text>
+              <text data-venn-both x="320" y="206" text-anchor="middle" class="venn__both">Both</text>
+            </g>
+          </svg>
+          <div class="venn__control">
+            <label for="venn-range" class="label">Bring them together</label>
+            <input id="venn-range" class="venn__range" type="range" min="0" max="100" step="1" value="35" data-venn-range>
+            <div class="venn__ends" aria-hidden="true"><span>Apart</span><span>Overlapping</span></div>
+          </div>
+          <figcaption class="venn__caption" data-venn-caption aria-live="polite">Starting to meet.</figcaption>
+        </figure>
+        <blockquote class="ex__quote ex__quote--plum">
+          <p>“You can value a connection and still need space. You can care for someone and also have boundaries. Both can exist at the same time.”</p>
+          <footer class="label">Between Us, Closeness &amp; space</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 COMMUNICATING NEEDS ============ -->
+  <section id="needs" class="ex section" aria-labelledby="needs-title">
+    <div class="wrap ex__grid">
+      <div class="ex__text">
+        <p class="ex__num" data-reveal>04</p>
+        <h2 id="needs-title" class="h-xl" data-reveal>Communicating <span class="hl">needs.</span></h2>
+        <div class="ex__copy" data-reveal>
+          <p class="lead">Understanding what we need is one step. Finding words for it can help someone else understand too.</p>
+          <p class="muted">Choose a need to see one way it might be put into words. There’s no perfect phrasing. Think of it as a starting point.</p>
+        </div>
+        <p class="ex__frame" data-reveal>I’ve been feeling <span class="ex__blank"><span class="sr-only">blank</span></span>, and it would help me if <span class="ex__blank"><span class="sr-only">blank</span></span></p>
+        <a class="ex__journal" href="between-us.html#page-16"><span class="ex__journal-label">In the journal</span><span class="ex__journal-title">Activity 07 · Understand and choose · p.16</span></a>
+      </div>
+
+      <div class="ex__interactive">
+        <div class="needs" data-needs>
+          <svg class="needs__svg" aria-hidden="true" focusable="false">
+            <defs><linearGradient id="nd-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9E77B8"/><stop offset="1" stop-color="#EFA99D"/></linearGradient></defs>
+            <g data-needs-lines></g>
+          </svg>
+          <div class="needs__me" data-needs-me aria-hidden="true"><span>Me</span></div>
+          <ul class="needs__list" aria-label="Needs">
+              <li><button type="button" class="need" aria-pressed="true" data-need="0" data-meaning="Knowing where you stand with someone." data-say="Could you let me know we’re okay? It would help me feel more settled."><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Reassurance</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="1" data-meaning="Time to process your thoughts and feelings." data-say="I’d like a little time to think about this. Can we come back to it later?"><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Space</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="2" data-meaning="Being open about what’s really going on." data-say="I’d rather we were honest with each other, even when it’s hard to say."><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Honesty</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="3" data-meaning="Being able to rely on what happens next." data-say="It would help me if we could agree on what to expect from each other."><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Consistency</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="4" data-meaning="Saying what you mean, and being understood." data-say="Can I check I’ve understood what you meant?"><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Clear communication</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="5" data-meaning="Time together that feels present and unhurried." data-say="I’d love some time with you where we can really talk."><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Quality time</span></button></li>
+              <li><button type="button" class="need" aria-pressed="false" data-need="6" data-meaning="Feeling that your experience makes sense to someone." data-say="I don’t need you to fix it. It would help to feel understood."><span class="need__dot" data-need-dot aria-hidden="true"></span><span class="need__name">Understanding</span></button></li>
+          </ul>
+          <div class="needs__panel" aria-live="polite">
+            <p class="label needs__kicker">What it can mean</p>
+            <p class="needs__meaning" data-needs-meaning>Knowing where you stand with someone.</p>
+            <p class="label needs__kicker">One way it might sound</p>
+            <p class="needs__say" data-needs-say>“Could you let me know we’re okay? It would help me feel more settled.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVITATION ============ -->
+  <section class="ex-cta on-plum" aria-labelledby="cta-title">
+    <svg class="ex-cta__svg" viewBox="0 0 1440 600" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="cta-a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#CBB5DB" stop-opacity=".1"/><stop offset=".6" stop-color="#CBB5DB"/><stop offset="1" stop-color="#9E77B8"/></linearGradient>
+      <linearGradient id="cta-b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9E77B8" stop-opacity=".1"/><stop offset=".6" stop-color="#EFA99D"/><stop offset="1" stop-color="#CBB5DB"/></linearGradient></defs>
+      <path d="M820 640 C900 520 980 420 1100 330 S1320 150 1480 170" fill="none" stroke="url(#cta-a)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M900 -20 C960 120 1020 240 1100 330 S1280 520 1480 500" fill="none" stroke="url(#cta-b)" stroke-width="3" stroke-linecap="round"/>
+      <circle class="breathe breathe--slow" cx="1100" cy="330" r="14" fill="#EFA99D"/>
+    </svg>
+    <div class="wrap ex-cta__inner">
+      <div class="tab-rule" data-reveal><span class="tab">Between Us</span></div>
+      <h2 id="cta-title" class="ex-cta__title" data-reveal><span>Explore it</span> <span class="ex-cta__hl">for yourself.</span></h2>
+      <p class="lead ex-cta__text" data-reveal>Each idea on this page comes from an activity in Between Us. The journal gives you space to explore them through your own experiences, at your own pace.</p>
+      <div class="ex-cta__actions" data-reveal>
+        <a class="btn btn--light" href="between-us.html#reader">Read the journal <span class="btn__node" aria-hidden="true"></span></a>
+        <a class="link-line ex-cta__link" href="assets/journal/between-us-journal.pdf" download="Between-Us-Journal.pdf">Download PDF</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER (shared across pages) ============ -->
+<footer class="site-footer">
+  <div class="wrap footer__inner">
+    <div>
+      <svg class="footer__logo" viewBox="0 0 960 240" role="img" aria-label="The Connection Project">
+        <g transform="translate(20,52) scale(0.99)" fill="none" stroke-linecap="round">
+          <path d="M 14 42 C 61 2, 109 3, 161 65 C 211 125, 265 124, 318 57" stroke="#F7F0E9" stroke-width="5"/>
+          <path d="M 14 96 C 68 128, 116 117, 161 65 C 211 9, 260 -2, 318 38" stroke="#EFA99D" stroke-width="5"/>
+          <path d="M 14 109 C 79 103, 111 99, 161 65 C 217 36, 280 83, 318 108" stroke="#CBB5DB" stroke-width="3" opacity="0.65"/>
+          <circle cx="161" cy="65" r="10" fill="#9E77B8"/>
+        </g>
+        <g fill="#F7F0E9" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif">
+          <text x="365" y="78" font-size="28" font-weight="500" letter-spacing="13">THE</text>
+          <text x="361" y="158" font-size="92" font-weight="700" letter-spacing="-1">CONNECTION</text>
+          <text x="365" y="208" font-size="28" font-weight="500" letter-spacing="13">PROJECT</text>
+        </g>
+      </svg>
+      <p class="footer__tag">Explore. Reflect. Connect.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="between-us.html">Between Us</a></li>
+        <li><a href="explore.html">Explore</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap"><p class="footer__base">The Connection Project is a design-led reflective project. It is not a clinical, diagnostic or therapy service.</p></div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/explore.js" defer></script>
+</body>
+</html>
